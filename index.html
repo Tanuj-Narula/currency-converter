@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <p>Enter amount</p>
+            <input type="text" name="amount" id="amount" placeholder="Enter amount" pattern="[0-9]{1,1000000000000000}" title="Enter a valid amount">
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from" id="from" title="Currency"></select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left" id="icon"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to" id="to" title="Currency" ></select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg"></div>
+            <button title="click to Convert">Convert</button>
+        </form>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
